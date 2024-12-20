@@ -1,0 +1,57 @@
+<html lang="en-US">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="essai" content="width=device-width" />
+      <title>Tableau</title>
+    </head>
+
+    <form action="/monFormulaire" method="post">
+        <ul>
+          <li>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="user_name" maxlength="50" minlength="3" required/>
+          </li>
+          <li>
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user_mail" required />
+          </li>
+          <li>
+            <label for="password">Password</label>
+            <input type="password" minlength="6" maxlength="12" required >
+          </li>
+
+          <li>
+            <label for="Age">Age</label>
+            <input type="number" min="18" max="100" required >
+          </li>
+          <li>
+<li>  <fieldset>
+    <legend>Gender</legend>
+  
+    <div>
+      <input type="radio" id="male" name="male" checked />
+      <label for="male">Male</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="female" name="female" />
+      <label for="female">Female</label>
+    </div>
+  </fieldset>
+</li>
+<li>
+    <label for="comments">Comments</label>
+    <textarea id="comments" maxlength="200" name="comments" >
+         
+        </textarea>
+
+        <li> <label for="phone">
+          phone<br />
+          
+        </label>
+        
+        <input type="tel" id="phone" name="phone" value="99555444" readonly />
+        </li>
+        </ul>
+      </form>
+    </html>
